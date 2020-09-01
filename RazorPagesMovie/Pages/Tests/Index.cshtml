@@ -1,0 +1,16 @@
+﻿@page
+@model RazorPagesMovie.Pages.Tests.IndexModel
+@{
+    ViewData["Title"] = "Tests page";
+}
+
+<h2>@ViewData["Title"]</h2>
+<hr />
+
+<h3>Palavras</h3>
+<ol>
+    @foreach(var word in Model.Palavras)
+    {
+        <li>@Html.DisplayFor(modelItem => word)</li>
+    }
+</ol>
